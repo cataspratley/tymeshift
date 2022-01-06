@@ -1,0 +1,17 @@
+.infoWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  margin: 0;
+  opacity: 30%;
+}
+
+.infoText {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  opacity: 80%;
+  margin-left: 8px;
+}

@@ -1,0 +1,35 @@
+.header {
+  border-bottom: 1px solid #eeeeee;
+  width: 100%;
+  padding-left: 30px;
+}
+
+p {
+  color: #001122;
+  font-family: lato;
+  margin: 0;
+}
+
+.small-header {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+  opacity: 30%;
+}
+
+.big-header {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  opacity: 80%;
+  line-height: 28px;
+}
+
+.cardLocation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 60px;
+  line-height: 28px;
+  width: 100%;
+}

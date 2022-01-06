@@ -1,0 +1,39 @@
+.cardWrapper {
+  position: relative;
+  flex: 0 0 15%;
+  border: 1px solid #eeeeee;
+  border-radius: 2px;
+  padding: 15px 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+}
+
+.cardWrapper:hover {
+  background-color: #f6f6f6;
+}
+
+.locationHeader {
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  opacity: 80%;
+}
+
+.editButton {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #f6f6f6;
+  background-color: #ffffff;
+  right: 10px;
+  top: 10px;
+  opacity: 0;
+  z-index: 1;
+}
+
+.cardWrapper:hover .editButton,
+.editButton:hover {
+  opacity: 1;
+}
