@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Users, Timezone, Views } from "../../assets";
+import { Users, Timezone, Views } from "../../../assets";
 import "./LocationInfo.css";
 
 const LocationInfo = ({ users, time, views }) => {

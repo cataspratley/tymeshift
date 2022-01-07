@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { Edit } from "../../assets";
+import { Edit } from "../../../assets";
 import LocationInfo from "../LocationInfo";
 import ModalLocationDescription from "../ModalLocationDescription";
 

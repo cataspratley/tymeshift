@@ -1,6 +1,6 @@
 import React from "react";
 
-import CardLocation from "../CardLocation";
+import CardLocation from "./CardLocation";
 import LocationsData from "../../data/locations";
 
 import { getLocalTime, getTimeZone } from "../../utils/dateConverter";
