@@ -1,8 +1,11 @@
 import { render, screen } from "@testing-library/react";
 import AllLocations from "./AllLocations";
 
-test("renders learn react link", () => {
+test("if renders correctly the all locations page", () => {
+  expect.assertions(2);
+
   render(<AllLocations />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+  expect(screen.getByText("All Locations")).toBeInTheDocument();
+  expect(screen.getByText("Acme Locations")).toBeInTheDocument();
 });

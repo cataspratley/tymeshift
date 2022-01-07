@@ -17,7 +17,7 @@ const CardLocation = ({ name, users, time, description }) => {
   const handleClose = () => setIsOpen(false);
 
   return (
-    <div className="cardWrapper">
+    <div className="cardWrapper" data-testid="cardLocationModal">
       <p className="locationHeader">{name}</p>
 
       <LocationInfo users={users} time={time} views={views} />
