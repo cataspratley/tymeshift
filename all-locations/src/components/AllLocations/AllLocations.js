@@ -8,7 +8,7 @@ import { getLocalTime, getTimeZone } from "../../utils/dateConverter";
 import "./AllLocations.css";
 
 function AllLocations() {
-  const { locations, error } = LocationsData();
+  const { locations, error, loading } = LocationsData();
 
   return (
     <div>
@@ -18,18 +18,20 @@ function AllLocations() {
       </header>
 
       <div className="cardLocation">
-        {!error &&
-          locations.map((location) => (
-            <CardLocation
-              key={location.id}
-              name={location.name}
-              users={location.userCount}
-              time={`${getLocalTime(location.createdAt)} (${getTimeZone(
-                location.createdAt
-              )})`}
-              description={location.description}
-            />
-          ))}
+        {!loading
+          ? !error &&
+            locations.map((location) => (
+              <CardLocation
+                key={location.id}
+                name={location.name}
+                users={location.userCount}
+                time={`${getLocalTime(location.createdAt)} (${getTimeZone(
+                  location.createdAt
+                )})`}
+                description={location.description}
+              />
+            ))
+          : "Loading all locations"}
       </div>
     </div>
   );
